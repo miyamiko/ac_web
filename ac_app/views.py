@@ -13,7 +13,7 @@ class AccessView(View):
         context = { "test_text"     : test_text
                     }
     
-        return render(request,"index.html",context)
+        return render(request,"ac_app/index.html",context)
 
     def post(self, request, *args, **kwargs):
         q=Access.objects.get(id=1)
@@ -26,4 +26,4 @@ class AccessView(View):
         context = { "test_text"     : test_text
                     }
     
-        return render(request,"index.html",context)
+        return render(request,"ac_app/index.html",context)

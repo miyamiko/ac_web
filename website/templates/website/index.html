@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "website/base.html" %}
 {% load static %}
 
 {% block main %}
@@ -9,5 +9,5 @@
 {% else %}
 <h1>匿名ユーザーさん、ようこそ！Shunのホームページです。</h1>
 {% endif %}
-<img src="{% static 'welcome.jpg' %}" />
+<img src="{% static 'website/welcome.jpg' %}" />
 {% endblock %}
